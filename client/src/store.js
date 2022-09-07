@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { productListReducer, productDetailsReducer } from './reducers/productReducers';
 import { cartReducer } from './reducers/cartReducers';
-import { userLoginReducer } from './reducers/userReducers';
+import { userLoginReducer, userRegisterReducer } from './reducers/userReducers';
 
 // get cart Items from Local storage
 const cartItemsFromStorage = localStorage.getItem('cartItems')
@@ -22,7 +22,8 @@ const store = configureStore({
 		productList: productListReducer,
 		productDetails: productDetailsReducer,
 		cart: cartReducer,
-		userLogin: userLoginReducer
+		userLogin: userLoginReducer,
+		userRegister: userRegisterReducer
 	},
 	preloadedState,
 	devTools: process.env.NODE_ENV !== 'production', //only show devTools when in production
