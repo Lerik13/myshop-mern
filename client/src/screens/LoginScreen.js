@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { login } from '../actions/userAction';
 import FormContainer from '../components/FormContainer';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
+import { login } from '../actions/userActions';
 
 //const LoginScreen = ({ location }) => {
 const LoginScreen = () => {
@@ -30,7 +30,7 @@ const LoginScreen = () => {
 
 	const submitHandler = (e) => {
 		e.preventDefault()
-		// DISPATCH LOGIN
+		
 		dispatch(login(email, password))
 	}
 
