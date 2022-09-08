@@ -29,7 +29,8 @@ const CartScreen = () => {
 	}
 
 	const checkoutHandler = () => {
-		navigate('/login?redirect=shipping') // if user is authorized goto shipping, otherwise goto login
+		//navigate('/login?redirect=shipping') // if user is authorized goto shipping, otherwise goto login
+		navigate('/shipping') 
 	}
 
 	return <Row>
