@@ -1,7 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { productListReducer, productDetailsReducer } from './reducers/productReducers';
 import { cartReducer } from './reducers/cartReducers';
-import { userLoginReducer, userRegisterReducer, userDetailsReducer, userUpdateProfileReducer } from './reducers/userReducers';
+import { 
+	userLoginReducer,
+	userRegisterReducer,
+	userDetailsReducer,
+	userUpdateProfileReducer
+} from './reducers/userReducers';
+import { orderCreateReducer } from './reducers/orderReducers';
 
 // get cart Items from Local storage
 const cartItemsFromStorage = localStorage.getItem('cartItems')
@@ -33,6 +39,7 @@ const store = configureStore({
 		userRegister: userRegisterReducer,
 		userDetails: userDetailsReducer,
 		userUpdateProfile: userUpdateProfileReducer,
+		orderCreate: orderCreateReducer,
 	},
 	preloadedState,
 	devTools: process.env.NODE_ENV !== 'production', //only show devTools when in production
