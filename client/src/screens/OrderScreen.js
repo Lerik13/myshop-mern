@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-//import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
