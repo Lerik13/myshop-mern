@@ -7,7 +7,7 @@ import {
 	userDetailsReducer,
 	userUpdateProfileReducer
 } from './reducers/userReducers';
-import { orderCreateReducer, orderDetailsReducer, orderPayReducer } from './reducers/orderReducers';
+import { orderCreateReducer, orderDetailsReducer, orderPayReducer, orderListMyReducer } from './reducers/orderReducers';
 
 // get cart Items from Local storage
 const cartItemsFromStorage = localStorage.getItem('cartItems')
@@ -42,6 +42,7 @@ const store = configureStore({
 		orderCreate: orderCreateReducer,
 		orderDetails: orderDetailsReducer,
 		orderPay: orderPayReducer,
+		orderListMy: orderListMyReducer
 	},
 	preloadedState,
 	devTools: process.env.NODE_ENV !== 'production', //only show devTools when in production
