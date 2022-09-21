@@ -6,7 +6,7 @@ import { Table, Button, Row, Col } from 'react-bootstrap';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
 import { listProducts, deleteProduct, createProduct } from '../actions/productActions';
-import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
+import { PRODUCT_CREATE_RESET, PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 
 const ProductListScreen = () => {
 	const dispatch = useDispatch()
@@ -26,7 +26,12 @@ const ProductListScreen = () => {
 
 	useEffect(() => {
 		dispatch({ type: PRODUCT_CREATE_RESET })
+		//dispatch({ type: PRODUCT_UPDATE_RESET })
+	}, [])
 
+	useEffect(() => {
+		dispatch({ type: PRODUCT_CREATE_RESET })
+		//dispatch({ type: PRODUCT_UPDATE_RESET })
 		
 		if (!userInfo.isAdmin) {
 			navigate('/login')
