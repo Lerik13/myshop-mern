@@ -10,7 +10,7 @@ import {
 	userDeleteReducer,
 	userUpdateReducer
 } from './reducers/userReducers';
-import { orderCreateReducer, orderDetailsReducer, orderPayReducer, orderListMyReducer, orderListReducer } from './reducers/orderReducers';
+import { orderCreateReducer, orderDetailsReducer, orderPayReducer, orderDeliverReducer, orderListMyReducer, orderListReducer } from './reducers/orderReducers';
 
 // get cart Items from Local storage
 const cartItemsFromStorage = localStorage.getItem('cartItems')
@@ -51,6 +51,7 @@ const store = configureStore({
 		orderCreate: orderCreateReducer,
 		orderDetails: orderDetailsReducer,
 		orderPay: orderPayReducer,
+		orderDeliver: orderDeliverReducer,
 		orderListMy: orderListMyReducer,
 		orderList: orderListReducer
 	},
