@@ -88,7 +88,6 @@ const updateProduct = asyncHandler(async (req, res) => {
 // @route	POST /api/products/:id/reviews
 // @access	Private
 const createProductReview = asyncHandler(async (req, res) => {
-	console.log('!!!');
 	const { rating, comment } = req.body
 
 	const product = await Product.findById(req.params.id)
