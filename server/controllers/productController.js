@@ -132,7 +132,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 	}
 })
 
-// @desc	Get top rated products
+// @desc	Get top rated products (3 items)
 // @route	GET /api/products/top
 // @access	Public
 const getTopProducts = asyncHandler(async (req, res) => {
