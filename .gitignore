@@ -10,8 +10,9 @@ node_modules/
 /coverage
 
 # production
-/build
+/client/build
 /uploads
+
 # misc
 .DS_Store
 .env
