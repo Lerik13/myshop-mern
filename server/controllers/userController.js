@@ -1,5 +1,4 @@
 import asyncHandler from 'express-async-handler'
-import { isErrored } from 'stream';
 import User from '../models/userModel.js';
 import generateToken from '../utils/generateToken.js';
 
