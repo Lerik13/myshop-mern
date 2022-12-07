@@ -6,7 +6,7 @@ import { listTopProducts } from '../actions/productActions';
 import Loader from '../components/Loader';
 import Message from './Message';
 
-const ProductCarousel = () => {
+const  ProductCarousel = () => {
 	const dispatch = useDispatch()
 
 	const productTopRated = useSelector(state => state.productTopRated)

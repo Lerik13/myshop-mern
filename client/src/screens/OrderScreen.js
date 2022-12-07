@@ -44,6 +44,7 @@ const OrderScreen = () => {
 		}
 
 		if (!order || order._id !== orderId || successPay ||successDeliver) { // fetch for more recent order
+			//dispatch(clearCart())
 			dispatch({ type: ORDER_PAY_RESET });
 			dispatch({ type: ORDER_DELIVER_RESET });
 			dispatch(getOrderDetails(orderId))

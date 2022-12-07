@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom';
 import { Row, Col, ListGroup, Form, Button, Image, Card} from 'react-bootstrap'
@@ -8,7 +8,7 @@ import { addToCart, removeFromCart } from '../actions/cartActions'
 const CartScreen = () => {
 	const dispatch = useDispatch()
 	let navigate =  useNavigate()
-
+	
 	const cart = useSelector(state => state.cart)
 	const { cartItems } = cart
 

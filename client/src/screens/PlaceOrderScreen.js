@@ -7,6 +7,7 @@ import CheckoutSteps from '../components/CheckoutSteps';
 import { Link } from 'react-router-dom';
 import { addDecimals } from '../utils/price';
 import { createOrder } from '../actions/orderActions';
+import { clearCart } from '../actions/cartActions';
 
 const PlaceOrderScreen = () => {
 	const cart = useSelector(state => state.cart)
@@ -43,6 +44,7 @@ const PlaceOrderScreen = () => {
 			taxPrice: cart.taxPrice,
 			totalPrice: cart.totalPrice
 		}))
+		//dispatch(clearCart())
 	}
 	
 	return <>
