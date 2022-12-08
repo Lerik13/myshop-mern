@@ -10,16 +10,16 @@ using stack of technologies: MERN: MongoDB + express + React js + Node.js
 
 State-management: Redux
 
-DB Schema:<br>
+Database Schema:<br>
 ![DB Schema](https://github.com/Lerik13/myshop-mern/blob/main/schema_db.jpg?raw=true "DB Schema")
 
 ### Client Functionality
 
 1. Register User<br>
-![Registration](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/0.jpg?raw=true "Registration")
 
 2. Login/Logout (Saving JWT-token in user's Local Storage)<br>
-![Authorization](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/1.jpg?raw=true "Authorization")
+![Registration](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/0.jpg?raw=true "Registration")
+  ![Authorization](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/1.jpg?raw=true "Authorization")
 
 3.  Shop page (main-page) - Pagination + Search product by name + Slider with top rated products<br>
 ![Catalog_products](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/2.jpg?raw=true "Catalog")
