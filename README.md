@@ -1,7 +1,11 @@
-Shopping app, using MERN-stack
-
 # Online Shopping application of gift products
-Client-Server app for marketing purpose
+Client-Server app for selling products online.
+On the main page, customer can see all products or search by name of the product (+ pagination).
+Authorized customer can buy a product (adding the product to the shopping cart) if the product's status is not "out of stock" and also leave one review with star-rating.
+There are 4 steps of the Payment process: Sign-In, fill up Shipping information, choose a Payment method, and Place an order.
+On the Profile page user can overlook his orders by clicking on a particular order.
+In the admin dashboard there are two main functions: working with a list of users and observing all orders with the possibility to change the status for an order (delivered)
+
 ```
 test user: user@gift-shop.ca, password: 12345
 admin: admin@gift-shop.ca, password: 12345
@@ -54,7 +58,7 @@ Database Schema:<br>
     
 ![User_profile](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/6.jpg?raw=true "User profile") 
 
-8. Admin panel (for user with field isAdmin='true')
+8. Admin dashboard for user with admin role (field isAdmin='true')
     - List of Users (edit/delete/change status 'isAdmin')
     ![Admin_Users](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/7_1.jpg?raw=true "Users") 
     ![Edit_User](https://github.com/Lerik13/myshop-mern/blob/main/screenshots/7_2.jpg?raw=true "EditUser") 
