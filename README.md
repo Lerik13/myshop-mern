@@ -68,21 +68,18 @@ DB Schema:<br>
   - mongoose -- mongoDB object modeling for node.js
   - bcryptjs -- create hash passwords
   - jsonwebtoken -- generate web-token for autontification in client-side
-  - express-async-handler -- simple middleware for handling exceptions inside of async express routes and passing them to your express error handler
+  - cookie-parser -- allows us to access request.cookie - for saving JWT-token
   - multer -- for handling uploading files
-  - morgan -- http-request logger middleware for node.js
-  - nodemon (dependency) -- constantly watch server.js, so we don't need to restart server
 
 #### Frontend libs:
   - react, react-dom
   - react-router-dom -- page navigation
-  - redux, react-redux, redux-thunk, redux-devtools-extension -- State Management
-  - axios --  http-library to make http-requests to backEnd
-  - react-bootstrap, react-router-bootstrap -- CSS library
-  - react-paypal-js -- payment through PayPal
-  - react-helmet -- manage all of your changes to the document head - change tittle of pages
-
-### Deploying
+  - reduxjs, toolkit react-redux -- State Management
+  - react-bootstrap, react-router-bootstrap -- Bootstrap CSS library
+  - react-helmet -- manage all of your changes to the document head - change title of pages
+	- react-toastify -- nice messages/alerts
+	- react-paypal-js -- payment through PayPal
+	
 #### set Environment Variables:
 1. MongoDB database URI (MONGO_URI)
 2. JWT secret (JWT_SECRET)

@@ -59,7 +59,4 @@ if (process.argv[2] === '-d') {
 } else {
 	importData()
 }
-// run importData()
-// node server/seeder
-// run destroyData()
-// node server/seeder -d
+
