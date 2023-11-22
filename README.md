@@ -77,8 +77,8 @@ DB Schema:<br>
   - reduxjs, toolkit react-redux -- State Management
   - react-bootstrap, react-router-bootstrap -- Bootstrap CSS library
   - react-helmet -- manage all of your changes to the document head - change title of pages
-	- react-toastify -- nice messages/alerts
-	- react-paypal-js -- payment through PayPal
+  - react-toastify -- nice messages/alerts
+  - react-paypal-js -- payment through PayPal
 	
 #### set Environment Variables:
 1. MongoDB database URI (MONGO_URI)
