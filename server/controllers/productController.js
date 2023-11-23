@@ -15,23 +15,23 @@ const getProducts = asyncHandler(async (req, res) => {
 		}
 	} : {}
 
-	const count = await Product.countDocuments({ ...keyword })
-	const products = await Product.find({ ...keyword }).limit(pageSize).skip(pageSize * (page - 1))
+	const count = await Product.countDocuments({ ...keyword });
+	const products = await Product.find({ ...keyword }).limit(pageSize).skip(pageSize * (page - 1));
 	
-	res.json({ products, page, pages: Math.ceil(count / pageSize) })
+	res.status(200).json({ products, page, pages: Math.ceil(count / pageSize) });
 })
 
 // @desc	Fetch single product
 // @route	GET /api/products/:id
 // @access	Public
 const getProductById = asyncHandler(async (req, res) => {
-	const product = await Product.findById(req.params.id)
+	const product = await Product.findById(req.params.id);
 
 	if (product) {
-		res.json(product)
+		res.status(200).json(product);
 	} else {
-		res.status(404)
-		throw new Error('Product not found')
+		res.status(404);
+		throw new Error('Product not found');
 	}
 })
 
@@ -43,7 +43,7 @@ const deleteProduct = asyncHandler(async (req, res) => {
 
 	if (product) {
 		await product.remove()
-		res.json({ message: 'Product removed' })
+		res.status(200).json({ message: 'Product removed' })
 	} else {
 		res.status(404)
 		throw new Error('Product not found')
@@ -64,10 +64,10 @@ const createProduct = asyncHandler(async (req, res) => {
 		countInStock: 0,
 		numReviews: 0,
 		description: 'Sample description'
-	})
+	});
 
-	const createProduct = await product.save()
-	res.status(201).json(createProduct)
+	const createProduct = await product.save();
+	res.status(201).json(createProduct);
 })
 
 // @desc	Update a product
@@ -88,7 +88,7 @@ const updateProduct = asyncHandler(async (req, res) => {
 		product.countInStock = countInStock
 
 		const updatedProduct = await product.save()
-		res.json(updatedProduct)
+		res.status(200).json(updatedProduct)
 	} else {
 		res.status(404)
 		throw new Error('Product not found')
@@ -138,7 +138,7 @@ const createProductReview = asyncHandler(async (req, res) => {
 const getTopProducts = asyncHandler(async (req, res) => {
 	const products = await Product.find({}).sort({ rating: -1}).limit(3)
 	
-	res.json(products)
+	res.status(200).json(products)
 })
 
 export {
