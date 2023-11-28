@@ -1,6 +1,6 @@
 {
 	"name": "ecommerce_mern",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "MERN shopping cart app",
 	"main": "server.js",
 	"type": "module",
