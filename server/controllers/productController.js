@@ -5,7 +5,7 @@ import Product from '../models/productModel.js';
 // @route	GET /api/products
 // @access	Public
 const getProducts = asyncHandler(async (req, res) => {
-	const pageSize = process.env.PAGE_SIZE // pagination: how many products show in 1 page
+	const pageSize = process.env.PAGINATION_LIMIT // pagination: how many products show in 1 page
 	const page = Number(req.query.pageNumber) || 1
 
 	const keyword = req.query.keyword ? {

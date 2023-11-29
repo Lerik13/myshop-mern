@@ -84,5 +84,7 @@ DB Schema:<br>
 1. MongoDB database URI (MONGO_URI)
 2. JWT secret (JWT_SECRET)
 3. environment (NODE_ENV = production)
-4. Quantity items in one page (PAGE_SIZE)
+4. Quantity items in one page (PAGINATION_LIMIT)
 5. PAYPAL_CLIENT_ID
+6. PAYPAL_APP_SECRET
+7. PAYPAL_API_URL
