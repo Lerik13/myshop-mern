@@ -1,4 +1,7 @@
 # Online Shopping application of gift products
+
+[link to web-site](https://gift-shop-mern.onrender.com)
+
 Client-Server app for selling products online.
 On the main page, customer can see all products or search by name of the product (+ pagination).
 Authorized customer can buy a product (adding the product to the shopping cart) if the product's status is not "out of stock" and also leave one review with star-rating.
